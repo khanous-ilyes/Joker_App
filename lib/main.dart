@@ -89,6 +89,7 @@ class _ImageUploadsState extends State<ImageUploads> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      darkTheme: ThemeData.dark(),
       home: Scaffold(
         appBar: AppBar(
           title: Text("Joker_App"),
