@@ -88,8 +88,8 @@ class _ImageUploadsState extends State<ImageUploads> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData.dark(),
       debugShowCheckedModeBanner: false,
-      darkTheme: ThemeData.dark(),
       home: Scaffold(
         appBar: AppBar(
           title: Text("Joker_App"),
@@ -136,7 +136,8 @@ class _ImageUploadsState extends State<ImageUploads> {
                   Navigator.of(context).pushReplacement(
                       MaterialPageRoute(builder: (_) => Views()));
                 },
-                child: Text('click here to view all downloads photos'))
+                child: Text('click here to view all downloads photos')),
+            Image.asset('images/hamoud.jpg')
           ],
         ),
       ),
